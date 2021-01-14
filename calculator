@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class app {
+	public static void main(String [] args) {
+		Scanner consoleinput = new Scanner(System.in);
+		System.out.print("Enter first number: ");
+		double firstnum = consoleinput.nextDouble();
+		
+		System.out.print("Enter operator: ");
+		String operator = consoleinput.next();
+		
+		System.out.print("Enter second number: ");
+		double secondnum = consoleinput.nextDouble();
+		
+		if(operator.equals("+")) {
+			System.out.println(firstnum + secondnum);
+		} else if(operator.equals("-")) {
+			System.out.println(firstnum - secondnum);
+		} else if(operator.equals("*")) {
+			System.out.println(firstnum * secondnum);
+		} else if(operator.equals("/")) {
+			System.out.println(firstnum / secondnum);
+		} else {
+			System.out.println("Invalid operator.");
+		}
+		
+		
+	}
+}
